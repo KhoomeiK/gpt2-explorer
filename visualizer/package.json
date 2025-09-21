@@ -1,0 +1,26 @@
+{
+  "name": "gpt2-activation-graph",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "d3-force": "^3.0.0",
+    "d3-zoom": "^3.0.0",
+    "mitt": "^3.0.1",
+    "js-tiktoken": "^1.0.10"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "vite": "^5.4.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1"
+  }
+}
