@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GPT-2 WebGL Inference</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="dashboard-grid">
+    <!-- ───── Column 1: Text & Controls ───── -->
+    <div class="sidebar">
+      <h1>GPT-2 WebGL Inference Demo</h1>
+      <textarea id="inputText" rows="8">Hello world!</textarea>
+      <div id="controls">
+        <button id="startBtn">Start</button>
+        <button id="stopBtn" disabled>Stop</button>
+      </div>
+    </div>
+
+    <!-- ───── Column 2: Transformer Blocks ───── -->
+    <div class="transformer-blocks">
+      <h2>Transformer Block Outputs</h2>
+      <div id="layerCanvases"></div>
+    </div>
+
+    <!-- ───── Column 3: First Layer Attention ───── -->
+    <div class="first-attn">
+      <h2>First Layer Attention Matrices</h2>
+      <div id="firstAttentionCanvases"></div>
+    </div>
+
+    <!-- ───── Column 4: Last Layer Attention ───── -->
+    <div class="last-attn">
+      <h2>Last Layer Attention Matrices</h2>
+      <div id="lastAttentionCanvases"></div>
+    </div>
+  </div>
+
+  <canvas id="glcanvas" hidden></canvas>
+  <script type="module" src="src/main.ts"></script>
+</body>
+</html>
